@@ -1148,7 +1148,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .condition-block--gray {
-  background: #F7F2EB;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
+    url("bg-marmore.jpg") center/cover no-repeat;
 }
 
 .condition-media {
@@ -1428,7 +1430,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ===== FAQ BLOCK ===== */
 .faq-block {
   position: relative;
-  background: url("bg-faq.jpg") center/cover no-repeat;
+  background: url("bg-marmore.jpg") center/cover no-repeat;
   padding: 104px 0 96px;
 }
 
