@@ -159,7 +159,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo {
-  height: 64px;
+  height: 74px;
   width: auto;
   display: block;
 }
@@ -174,20 +174,20 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ===== LEFT COLUMN ===== */
 .hero-left {
-  flex: 0 0 490px;
+  flex: 0 0 431px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 44px;
 }
 
 .hero-left h1 {
-  font-size: 61px;
+  font-size: 54px;
   font-weight: 500;
   line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--dark);
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .gradient-text {
@@ -200,12 +200,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .subtext {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.6;
   color: var(--dark);
-  max-width: 440px;
-  margin-bottom: 32px;
+  max-width: 387px;
+  margin-bottom: 28px;
 }
 
 .btn-cta {
@@ -257,12 +257,23 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .crefito {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--dark);
   text-transform: uppercase;
   opacity: 0.7;
+}
+
+/* CTA do hero 12% menor que o padrão (somente desktop) */
+@media (min-width: 821px) {
+  .hero .btn-cta {
+    height: 63px;
+    padding: 0 46px;
+    font-size: 16px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+  }
 }
 
 /* ===== RIGHT COLUMN ===== */
@@ -303,7 +314,7 @@ body::-webkit-scrollbar-thumb:hover {
   inset: 0;
   width: 162px;
   height: 162px;
-  animation: spin-stamp 18s linear infinite;
+  animation: spin-stamp 21s linear infinite;
   transform-origin: center center;
 }
 
@@ -312,8 +323,8 @@ body::-webkit-scrollbar-thumb:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 92px;
-  height: 92px;
+  width: 83px;
+  height: 83px;
 }
 
 @keyframes cta-gradient {
@@ -658,16 +669,16 @@ body::-webkit-scrollbar-thumb:hover {
   .hero-inner { padding: 0 40px; }
 
   .hero-left {
-    flex: 0 0 420px;
+    flex: 0 0 370px;
   }
 
   .hero-left h1 {
-    font-size: 52px;
+    font-size: 46px;
   }
 
   .subtext {
-    font-size: 16px;
-    max-width: 380px;
+    font-size: 14px;
+    max-width: 334px;
   }
 
   .doctor-img {
@@ -676,7 +687,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   .stamp-wrapper { width: 124px; height: 124px; top: -68px; right: -16px; }
   .stamp-txt    { width: 124px; height: 124px; }
-  .stamp-iso    { width: 70px;  height: 70px; }
+  .stamp-iso    { width: 63px;  height: 63px; }
 }
 
 /* Tablet portrait */
@@ -732,14 +743,14 @@ body::-webkit-scrollbar-thumb:hover {
 
   .stamp-wrapper { top: 40px; right: 16px; width: 110px; height: 110px; }
   .stamp-txt    { width: 110px; height: 110px; }
-  .stamp-iso    { width: 62px; height: 62px; }
+  .stamp-iso    { width: 56px; height: 56px; }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
   .hero-inner { padding: 0 24px; }
 
-  .logo { height: 52px; }
+  .logo { height: 60px; }
 
   .hero-left {
     padding-top: 24px;
@@ -781,7 +792,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   .stamp-wrapper { width: 86px; height: 86px; top: 30px; bottom: auto; right: 12px; }
   .stamp-txt    { width: 86px; height: 86px; }
-  .stamp-iso    { width: 48px; height: 48px; }
+  .stamp-iso    { width: 43px; height: 43px; }
 
   .whatsapp-float { bottom: 20px; right: 20px; width: 60px; height: 60px; }
 }
@@ -2134,7 +2145,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 480px) {
   .logo {
-    height: 48px;
+    height: 55px;
   }
 
   .hero-left {
