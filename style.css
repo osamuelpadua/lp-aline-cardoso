@@ -325,7 +325,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 248px;
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #EADFD3 0%, #D7C4AE 100%);
+  background: linear-gradient(to right, #7D8D6E 0%, #5A6B4F 50%, #435139 100%);
   overflow: hidden;
 }
 
@@ -338,7 +338,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-repeat: repeat;
   background-size: 200px 200px;
   mix-blend-mode: soft-light;
-  opacity: 0.4;
+  opacity: 0.55;
   pointer-events: none;
   z-index: 2;
 }
@@ -364,13 +364,13 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -0.02em;
-  color: var(--dark);
+  color: var(--white);
 }
 
 .intro-left h2 strong {
   font-weight: 800;
   display: block;
-  color: #B05E43;
+  color: #E2C283;
 }
 
 .intro-right {
@@ -381,7 +381,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--dark);
+  color: var(--white);
 }
 
 .intro-right p strong {
@@ -549,7 +549,7 @@ body::-webkit-scrollbar-thumb:hover {
 .problems-block {
   position: relative;
   height: 195px;
-  background: linear-gradient(to right, #B05E43 0%, #8E4A34 100%);
+  background: linear-gradient(to right, #7D8D6E 0%, #5A6B4F 50%, #435139 100%);
   overflow: visible;
   clip-path: inset(-400px 0 0 0); /* permite sangrar acima, clipa abaixo */
   z-index: 2;
@@ -1247,8 +1247,8 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 auto;
   padding: 0 48px;
   display: grid;
-  grid-template-columns: minmax(320px, 382px) minmax(0, 1fr);
-  gap: 72px;
+  grid-template-columns: minmax(340px, 500px) minmax(0, 1fr);
+  gap: 64px;
   align-items: center;
 }
 
