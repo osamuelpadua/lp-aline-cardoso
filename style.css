@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ===== TOP BAR ===== */
 .top-bar {
   height: 6px;
-  background: var(--gradient);
+  background: linear-gradient(to right, #B88A48 0%, #B05E43 55%, #6B4A2C 100%);
   width: 100%;
 }
 
@@ -369,7 +369,7 @@ body::-webkit-scrollbar-thumb:hover {
 .intro-left h2 strong {
   font-weight: 800;
   display: block;
-  color: #8A6430;
+  color: #B05E43;
 }
 
 .intro-right {
@@ -442,7 +442,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: #5A6B4F;
   margin-bottom: 12px;
 }
 
@@ -486,7 +486,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .card:hover {
-  border-color: #EADFD3;
+  border-color: #D9DDC8;
   box-shadow: none;
   transform: translateY(-4px);
 }
@@ -941,7 +941,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #D7C4AE, #6B4A2C);
+  background: linear-gradient(135deg, #B05E43, #5A3E2B);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -967,7 +967,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .rc-count {
   font-size: 12px;
-  color: #999;
+  color: #A89C8F;
   display: block;
   margin-top: 2px;
 }
@@ -1286,7 +1286,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: 0.07em;
-  color: #A67C3A;
+  color: #5A6B4F;
   margin-bottom: 28px;
 }
 
@@ -1435,7 +1435,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #A67C3A;
+  color: #5A6B4F;
   margin-bottom: 18px;
 }
 
@@ -1690,7 +1690,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #A67C3A;
+  color: #5A6B4F;
   margin-bottom: 10px;
 }
 

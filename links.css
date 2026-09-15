@@ -64,7 +64,7 @@
   min-width: 124px;
   min-height: 124px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(184, 138, 72, 0.15), rgba(107, 74, 44, 0.15));
+  background: linear-gradient(135deg, #D9DDC8, #EADFD3);
   padding: 6px;
   box-shadow: 0 4px 20px rgba(107, 74, 44, 0.12);
   display: flex;
