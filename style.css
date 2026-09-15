@@ -7,9 +7,9 @@
   --teal:       #D7C4AE;
   --white:      #FFFFFF;
   --gray-bg:    #F7F2EB;
-  --grad-start: #B88A48;
-  --grad-end:   #6B4A2C;
-  --gradient:   linear-gradient(to right, #B88A48, #6B4A2C);
+  --grad-start: #C49A58;
+  --grad-end:   #A67C3A;
+  --gradient:   linear-gradient(to right, #C49A58, #A67C3A);
 }
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ===== TOP BAR ===== */
 .top-bar {
   height: 6px;
-  background: linear-gradient(to right, #B88A48 0%, #B05E43 55%, #6B4A2C 100%);
+  background: linear-gradient(to right, #D6B06A 0%, #B05E43 50%, #A67C3A 100%);
   width: 100%;
 }
 
@@ -196,12 +196,13 @@ body::-webkit-scrollbar-thumb:hover {
 .btn-cta {
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(135deg, #B88A48, #A67C3A, #6B4A2C, #A67C3A, #B88A48);
+  background: linear-gradient(135deg, #D6B06A, #C49A58, #A67C3A, #C49A58, #D6B06A);
   background-size: 400% 400%;
   animation: cta-gradient 10s linear infinite;
   overflow: hidden;
   position: relative;
   color: var(--white);
+  text-shadow: 0 1px 2px rgba(90, 62, 43, 0.28);
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -462,7 +463,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.7;
-  color: var(--primary);
+  color: #7A6A5A;
 }
 
 /* Cards grid */
@@ -506,7 +507,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--dark);
+  color: #7A6A5A;
 }
 
 /* Footer */
@@ -548,7 +549,7 @@ body::-webkit-scrollbar-thumb:hover {
 .problems-block {
   position: relative;
   height: 195px;
-  background: linear-gradient(to right, #9A7038 0%, #4E3524 100%);
+  background: linear-gradient(to right, #B05E43 0%, #8E4A34 100%);
   overflow: visible;
   clip-path: inset(-400px 0 0 0); /* permite sangrar acima, clipa abaixo */
   z-index: 2;
@@ -771,9 +772,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* ===== WHATSAPP FLUTUANTE ===== */
 @keyframes wpp-pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(184, 138, 72, 0.55), 0 0 0 0 rgba(184, 138, 72, 0.3); }
-  50%  { box-shadow: 0 0 0 14px rgba(184, 138, 72, 0.12), 0 0 0 28px rgba(184, 138, 72, 0.04); }
-  100% { box-shadow: 0 0 0 0 rgba(184, 138, 72, 0), 0 0 0 0 rgba(184, 138, 72, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(90, 107, 79, 0.55), 0 0 0 0 rgba(90, 107, 79, 0.3); }
+  50%  { box-shadow: 0 0 0 14px rgba(90, 107, 79, 0.12), 0 0 0 28px rgba(90, 107, 79, 0.04); }
+  100% { box-shadow: 0 0 0 0 rgba(90, 107, 79, 0), 0 0 0 0 rgba(90, 107, 79, 0); }
 }
 
 .whatsapp-float {
@@ -782,7 +783,7 @@ body::-webkit-scrollbar-thumb:hover {
   right: 30px;
   width: 72px;
   height: 72px;
-  background: linear-gradient(135deg, #B88A48, #6B4A2C);
+  background: linear-gradient(135deg, #7D8D6E, #48573F);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -796,7 +797,7 @@ body::-webkit-scrollbar-thumb:hover {
 .whatsapp-float:hover {
   transform: scale(1.05);
   animation: none;
-  box-shadow: 0 6px 28px rgba(107, 74, 44, 0.5);
+  box-shadow: 0 6px 28px rgba(72, 87, 63, 0.5);
 }
 
 .whatsapp-float:hover .wpp-badge {
@@ -820,7 +821,7 @@ body::-webkit-scrollbar-thumb:hover {
   transform: translateY(-50%) translateX(10px) scale(0.92);
   white-space: nowrap;
   background: #ffffff;
-  color: #6B4A2C;
+  color: #5A6B4F;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -849,7 +850,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* ===== REVIEWS BLOCK ===== */
 .reviews-block {
   position: relative;
-  background: linear-gradient(135deg, #A67C3A 0%, #7A5632 45%, #4E3524 100%);
+  background: linear-gradient(135deg, #7D8D6E 0%, #5A6B4F 50%, #435139 100%);
   padding: 80px 0 72px;
   display: flex;
   flex-direction: column;
@@ -924,6 +925,7 @@ body::-webkit-scrollbar-thumb:hover {
 .review-card {
   background: var(--white);
   border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(40, 50, 34, 0.18);
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
@@ -941,7 +943,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #B05E43, #5A3E2B);
+  background: linear-gradient(135deg, #C0765C, #9A4F38);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1190,7 +1192,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  background: linear-gradient(to right, #B88A48, #6B4A2C);
+  background: linear-gradient(to right, #C49A58, #A67C3A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1204,7 +1206,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--dark);
+  color: #7A6A5A;
 }
 
 /* ===== RESPONSIVE: CONDITION BLOCK ===== */
@@ -1275,7 +1277,7 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 1.06;
   letter-spacing: -0.03em;
   margin-bottom: 14px;
-  background: linear-gradient(90deg, #B88A48 0%, #A67C3A 48%, #6B4A2C 100%);
+  background: linear-gradient(90deg, #D6B06A 0%, #C49A58 45%, #A67C3A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1320,7 +1322,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #B88A48 0%, #8A6430 100%);
+  background: linear-gradient(135deg, #D6B06A 0%, #A67C3A 100%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1445,7 +1447,7 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 1.08;
   letter-spacing: -0.03em;
   margin-bottom: 14px;
-  background: linear-gradient(90deg, #B88A48 0%, #A67C3A 48%, #6B4A2C 100%);
+  background: linear-gradient(90deg, #D6B06A 0%, #C49A58 45%, #A67C3A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1699,7 +1701,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 700;
   line-height: 1.02;
   letter-spacing: -0.04em;
-  background: linear-gradient(90deg, #B88A48 0%, #A67C3A 48%, #6B4A2C 100%);
+  background: linear-gradient(90deg, #D6B06A 0%, #C49A58 45%, #A67C3A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1885,7 +1887,7 @@ body::-webkit-scrollbar-thumb:hover {
 .site-footer {
   position: relative;
   min-height: 72px;
-  background: linear-gradient(135deg, #8A6430 0%, #6B4A2C 42%, #4E3524 100%);
+  background: linear-gradient(135deg, #6E7F62 0%, #5A6B4F 45%, #48573F 100%);
   overflow: hidden;
 }
 

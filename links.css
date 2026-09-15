@@ -161,7 +161,7 @@
 
 /* Primary card (Agende) */
 .lk-card--primary {
-  background: linear-gradient(135deg, #B88A48, #A67C3A, #6B4A2C, #A67C3A, #B88A48);
+  background: linear-gradient(135deg, #D6B06A, #C49A58, #A67C3A, #C49A58, #D6B06A);
   background-size: 400% 400%;
   border-color: transparent;
   box-shadow: 0 6px 28px rgba(107, 74, 44, 0.28);
@@ -183,7 +183,7 @@
 }
 
 .lk-card--primary:hover {
-  background: linear-gradient(135deg, #C49A58, #B0853F, #7A5632, #B0853F, #C49A58);
+  background: linear-gradient(135deg, #DDBB78, #CDA462, #B08545, #CDA462, #DDBB78);
   background-size: 400% 400%;
   transform: translateY(-3px) scale(1.01);
   box-shadow: 0 14px 44px rgba(107, 74, 44, 0.32);
@@ -195,7 +195,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #B88A48, #6B4A2C);
+  background: linear-gradient(135deg, #D6B06A, #A67C3A);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,6 +241,7 @@
 .lk-card--primary .lk-card-title,
 .lk-card--primary .lk-card-desc {
   color: #ffffff;
+  text-shadow: 0 1px 2px rgba(90, 62, 43, 0.28);
 }
 
 .lk-card--primary .lk-card-desc {
