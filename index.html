@@ -116,11 +116,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <!-- Borda superior gradiente -->
   <div class="top-bar"></div>
 
   <!-- ======================== HERO ======================== -->
+  <main id="conteudo">
   <section class="hero">
     <div class="hero-bg"></div>
 
@@ -158,7 +160,7 @@
             <img src="stamp-txt.svg" class="stamp-txt" alt="">
             <img src="stamp-iso.svg" class="stamp-iso" alt="">
           </div>
-          <img src="dra-aline.png" class="doctor-img" alt="Dra. Aline Cardoso, fisioterapeuta especialista em coluna">
+          <img src="dra-aline.png" class="doctor-img" alt="Dra. Aline Cardoso, fisioterapeuta especialista em coluna" fetchpriority="high">
         </div>
 
       </div>
@@ -203,7 +205,7 @@
               <path d="M11 18l5 5 9-10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3>Avaliação completa<br>e individualizada</h3>
+          <h3>Avaliação completa <br>e individualizada</h3>
           <p>No primeiro momento, é feita uma análise detalhada do quadro, identificando as causas da dor e os fatores que impactam diretamente na sua recuperação.</p>
         </div>
 
@@ -214,7 +216,7 @@
               <path d="M11 18l5 5 9-10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3>Tratamento focado<br>na causa da dor</h3>
+          <h3>Tratamento focado <br>na causa da dor</h3>
           <p>Com técnicas específicas e direcionadas, o tratamento atua na origem do problema, promovendo alívio da dor e recuperação progressiva dos movimentos.</p>
         </div>
 
@@ -225,14 +227,14 @@
               <path d="M11 18l5 5 9-10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3>Retorno seguro às<br>atividades</h3>
+          <h3>Retorno seguro às <br>atividades</h3>
           <p>O progresso é acompanhado de perto, com ajustes no tratamento para garantir uma recuperação segura e o retorno gradual à sua rotina.</p>
         </div>
 
       </div>
 
       <div class="treatment-footer">
-        <p>Um método estruturado, baseado em prática clínica e evidências, pensado para<br>gerar resultados reais e duradouros no tratamento da coluna.</p>
+        <p>Um método estruturado, baseado em prática clínica e evidências, pensado para <br>gerar resultados reais e duradouros no tratamento da coluna.</p>
         <a href="https://wa.me/5531994268155" class="btn-cta btn-cta--center" target="_blank" rel="noopener">
           Agende uma Consulta
         </a>
@@ -263,7 +265,7 @@
     <div class="condition-inner">
 
       <div class="condition-media condition-media--video">
-        <video autoplay loop muted playsinline preload="metadata">
+        <video controls loop muted playsinline preload="metadata">
           <source src="hernia.mp4" type="video/mp4">
         </video>
       </div>
@@ -285,7 +287,7 @@
     <div class="condition-inner">
 
       <div class="condition-media">
-        <video autoplay loop muted playsinline preload="metadata" poster="lombar-poster.jpg">
+        <video controls loop muted playsinline preload="metadata" poster="lombar-poster.jpg">
           <source src="lombar.mp4" type="video/mp4">
         </video>
       </div>
@@ -345,7 +347,6 @@
   <!-- ======================== /CERVICAL BLOCK ======================== -->
 
   <!-- ======================== REVIEWS BLOCK ======================== -->
-  <!-- TODO: substituir os placeholders por avaliações reais de pacientes -->
   <section class="reviews-block">
     <div class="reviews-grain"></div>
     <div class="reviews-inner">
@@ -355,7 +356,7 @@
         <h2 class="reviews-title"><strong>O que dizem</strong> os pacientes</h2>
       </div>
 
-      <div class="reviews-carousel">
+      <div class="reviews-carousel" role="region" aria-roledescription="carrossel" aria-label="Depoimentos de pacientes" tabindex="0">
         <button class="carousel-btn carousel-btn--prev" aria-label="Anterior">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="24" cy="24" r="23" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
@@ -366,95 +367,189 @@
         <div class="carousel-viewport">
           <div class="reviews-track">
 
-            <div class="review-card">
+            <article class="review-card">
               <div class="rc-header">
-                <div class="rc-avatar">?</div>
+                <div class="rc-avatar">VS</div>
                 <div class="rc-info">
-                  <strong class="rc-name">[NOME DO PACIENTE]</strong>
-                  <span class="rc-count">Paciente</span>
+                  <strong class="rc-name">Victoria Saliba</strong>
+                  <span class="rc-count">Avaliação no Google</span>
                 </div>
               </div>
-              <div class="rc-stars">
-                <span class="rc-stars-icons">★★★★★</span>
-                <span class="rc-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </div>
-              <p class="rc-text">[DEPOIMENTO 1] Substituir por uma avaliação real de paciente.</p>
-            </div>
+              <p class="rc-text is-clamped">O estúdio é simplesmente excelente! A qualidade do atendimento é impecável e a professora é uma profissional incrível, além de muito divertida. O fato de ela ser fisioterapeuta faz toda a diferença: me ajudou muito com as dores na coluna causadas por problemas posturais do trabalho e pela escoliose. Hoje não vivo sem as aulas e sem a nossa troca durante os treinos. Foi um verdadeiro divisor de águas para minha saúde e qualidade de vida. Recomendo de olhos fechados!</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>O estúdio é simplesmente excelente! A qualidade do atendimento é impecável e a professora é uma profissional incrível, além de muito divertida.</p>
+                <p>O fato de ela ser fisioterapeuta faz toda a diferença: me ajudou muito com as dores na coluna causadas por problemas posturais do trabalho e pela escoliose.</p>
+                <p>Hoje não vivo sem as aulas e sem a nossa troca durante os treinos. Foi um verdadeiro divisor de águas para minha saúde e qualidade de vida. Recomendo de olhos fechados!</p>
+              </div>
+            </article>
 
-            <div class="review-card">
+            <article class="review-card">
               <div class="rc-header">
-                <div class="rc-avatar">?</div>
+                <div class="rc-avatar">TS</div>
                 <div class="rc-info">
-                  <strong class="rc-name">[NOME DO PACIENTE]</strong>
-                  <span class="rc-count">Paciente</span>
+                  <strong class="rc-name">Dr. Tadeu Sartini</strong>
+                  <span class="rc-count">Avaliação no Google</span>
                 </div>
               </div>
-              <div class="rc-stars">
-                <span class="rc-stars-icons">★★★★★</span>
-                <span class="rc-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </div>
-              <p class="rc-text">[DEPOIMENTO 2] Substituir por uma avaliação real de paciente.</p>
-            </div>
+              <p class="rc-text is-clamped">Comecei a fazer Pilates com a Aline e estou muito satisfeito. O ambiente é muito agradável, climatizado e limpo. Com poucas sessões minhas dores já melhoraram. Indico o trabalho que ela faz!</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>Comecei a fazer Pilates com a Aline e estou muito satisfeito. O ambiente é muito agradável, climatizado e limpo. Com poucas sessões minhas dores já melhoraram. Indico o trabalho que ela faz!</p>
+              </div>
+            </article>
 
-            <div class="review-card">
+            <article class="review-card">
               <div class="rc-header">
-                <div class="rc-avatar">?</div>
+                <div class="rc-avatar">EG</div>
                 <div class="rc-info">
-                  <strong class="rc-name">[NOME DO PACIENTE]</strong>
-                  <span class="rc-count">Paciente</span>
+                  <strong class="rc-name">Eveline Gomes de Oliveira</strong>
+                  <span class="rc-count">Avaliação no Google</span>
                 </div>
               </div>
-              <div class="rc-stars">
-                <span class="rc-stars-icons">★★★★★</span>
-                <span class="rc-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </div>
-              <p class="rc-text">[DEPOIMENTO 3] Substituir por uma avaliação real de paciente.</p>
-            </div>
+              <p class="rc-text is-clamped">Ambiente maravilhoso, acolhedor e muito bem cuidado. A Aline é uma profissional extremamente atenciosa, competente e dedicada, sempre corrigindo os movimentos e respeitando os limites de cada aluno. As aulas são personalizadas, eficientes e fazem muita diferença tanto na postura quanto no bem-estar do dia a dia. Dá pra sentir o cuidado e o amor pelo que faz. Recomendo de olhos fechados!</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>Ambiente maravilhoso, acolhedor e muito bem cuidado. A Aline é uma profissional extremamente atenciosa, competente e dedicada, sempre corrigindo os movimentos e respeitando os limites de cada aluno.</p>
+                <p>As aulas são personalizadas, eficientes e fazem muita diferença tanto na postura quanto no bem-estar do dia a dia. Dá pra sentir o cuidado e o amor pelo que faz. Recomendo de olhos fechados!</p>
+              </div>
+            </article>
 
-            <div class="review-card">
+            <article class="review-card">
               <div class="rc-header">
-                <div class="rc-avatar">?</div>
+                <div class="rc-avatar">CA</div>
                 <div class="rc-info">
-                  <strong class="rc-name">[NOME DO PACIENTE]</strong>
-                  <span class="rc-count">Paciente</span>
+                  <strong class="rc-name">Carlos do Carmo Ambrósio</strong>
+                  <span class="rc-count">Avaliação no Google</span>
                 </div>
               </div>
-              <div class="rc-stars">
-                <span class="rc-stars-icons">★★★★★</span>
-                <span class="rc-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </div>
-              <p class="rc-text">[DEPOIMENTO 4] Substituir por uma avaliação real de paciente.</p>
-            </div>
+              <p class="rc-text is-clamped">Bem localizado. Studio muito arejado, aparelhos ótimos e super bem cuidados, profissional competente e simpática. Um ambiente agradável, frequentado por ótimas pessoas.</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>Bem localizado. Studio muito arejado, aparelhos ótimos e super bem cuidados, profissional competente e simpática. Um ambiente agradável, frequentado por ótimas pessoas.</p>
+              </div>
+            </article>
 
-            <div class="review-card">
+            <article class="review-card">
               <div class="rc-header">
-                <div class="rc-avatar">?</div>
+                <div class="rc-avatar">TR</div>
                 <div class="rc-info">
-                  <strong class="rc-name">[NOME DO PACIENTE]</strong>
-                  <span class="rc-count">Paciente</span>
+                  <strong class="rc-name">Taty Rocha</strong>
+                  <span class="rc-count">Avaliação no Google</span>
                 </div>
               </div>
-              <div class="rc-stars">
-                <span class="rc-stars-icons">★★★★★</span>
-                <span class="rc-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </div>
-              <p class="rc-text">[DEPOIMENTO 5] Substituir por uma avaliação real de paciente.</p>
-            </div>
+              <p class="rc-text is-clamped">Excelente profissional! Muito dedicada e atenciosa, sempre se preocupa de verdade com os alunos e com as dificuldades de cada um. As aulas são bem conduzidas, seguras e, além de tudo, muito divertidas. É impossível não se sentir bem durante as aulas. Recomendo demais!</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>Excelente profissional! Muito dedicada e atenciosa, sempre se preocupa de verdade com os alunos e com as dificuldades de cada um.</p>
+                <p>As aulas são bem conduzidas, seguras e, além de tudo, muito divertidas. É impossível não se sentir bem durante as aulas. Recomendo demais!</p>
+              </div>
+            </article>
 
-            <div class="review-card">
+            <article class="review-card">
               <div class="rc-header">
-                <div class="rc-avatar">?</div>
+                <div class="rc-avatar">MC</div>
                 <div class="rc-info">
-                  <strong class="rc-name">[NOME DO PACIENTE]</strong>
-                  <span class="rc-count">Paciente</span>
+                  <strong class="rc-name">Maria Clara Madeira Pedro</strong>
+                  <span class="rc-count">Avaliação no Google</span>
                 </div>
               </div>
-              <div class="rc-stars">
-                <span class="rc-stars-icons">★★★★★</span>
-                <span class="rc-badge"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               </div>
-              <p class="rc-text">[DEPOIMENTO 6] Substituir por uma avaliação real de paciente.</p>
-            </div>
+              <p class="rc-text is-clamped">Fazer pilates com a Aline é muito bom! Ela é atenta, cuidadosa, excelente profissional, playlist boa durante a aula. Minha consciência corporal se tornou outra depois que comecei a fazer pilates no studio.</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>Fazer pilates com a Aline é muito bom! Ela é atenta, cuidadosa, excelente profissional, playlist boa durante a aula. Minha consciência corporal se tornou outra depois que comecei a fazer pilates no studio.</p>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="rc-header">
+                <div class="rc-avatar">YL</div>
+                <div class="rc-info">
+                  <strong class="rc-name">Yasmin Lage</strong>
+                  <span class="rc-count">Avaliação no Google</span>
+                </div>
+              </div>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="rc-text is-clamped">O espaço é super bem cuidado e gostoso, professora com técnica excelente, atenciosa demais e ainda é super carismática! Clima perfeito durante as aulas, tô amando!!!</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>O espaço é super bem cuidado e gostoso, professora com técnica excelente, atenciosa demais e ainda é super carismática! Clima perfeito durante as aulas, tô amando!!!</p>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="rc-header">
+                <div class="rc-avatar">AM</div>
+                <div class="rc-info">
+                  <strong class="rc-name">Agnes Martins</strong>
+                  <span class="rc-count">Avaliação no Google</span>
+                </div>
+              </div>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="rc-text is-clamped">No Studio Aline Cardoso sempre tive muita atenção por parte da professora, sempre preocupada em dar todos os direcionamentos de acordo com minha capacidade e necessidade física. Super recomendo!</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>No Studio Aline Cardoso sempre tive muita atenção por parte da professora, sempre preocupada em dar todos os direcionamentos de acordo com minha capacidade e necessidade física. Super recomendo!</p>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="rc-header">
+                <div class="rc-avatar">AL</div>
+                <div class="rc-info">
+                  <strong class="rc-name">Andrea Libanio</strong>
+                  <span class="rc-count">Avaliação no Google</span>
+                </div>
+              </div>
+              <div class="rc-stars" aria-label="5 estrelas">
+                <span class="rc-stars-icons" aria-hidden="true">★★★★★</span>
+                <span class="rc-rating">5.0</span>
+                <span class="rc-badge" aria-hidden="true"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </div>
+              <p class="rc-text is-clamped">A aula da Aline é espetacular, dei adeus às minhas dores e sinto o efeito esteticamente também. O ambiente é muito gostoso e não vejo o tempo passar! Super recomendo!</p>
+              <button class="rc-read-more" type="button" data-review-open>Exibir depoimento completo</button>
+              <div class="rc-full-text" hidden>
+                <p>A aula da Aline é espetacular, dei adeus às minhas dores e sinto o efeito esteticamente também. O ambiente é muito gostoso e não vejo o tempo passar! Super recomendo!</p>
+              </div>
+            </article>
 
           </div>
         </div>
@@ -538,7 +633,9 @@
             </span>
           </button>
           <div class="faq-answer">
-            <p>Nem sempre. Muitos casos de hérnia de disco podem ser tratados inicialmente de forma conservadora, com fisioterapia, exercícios e outras estratégias definidas de acordo com os sintomas e a avaliação individual. A necessidade de cirurgia depende da evolução do quadro e de fatores específicos de cada paciente.</p>
+            <div class="faq-answer-inner">
+              <p>Nem sempre. Muitos casos de hérnia de disco podem ser tratados inicialmente de forma conservadora, com fisioterapia, exercícios e outras estratégias definidas de acordo com os sintomas e a avaliação individual. A necessidade de cirurgia depende da evolução do quadro e de fatores específicos de cada paciente.</p>
+            </div>
           </div>
         </article>
 
@@ -552,7 +649,9 @@
             </span>
           </button>
           <div class="faq-answer">
-            <p>O tempo de tratamento varia de acordo com a intensidade dos sintomas, o tempo de evolução do quadro e a resposta individual de cada paciente. Após a avaliação, é definido um plano com objetivos claros, e a evolução é acompanhada de perto, com ajustes ao longo do processo.</p>
+            <div class="faq-answer-inner">
+              <p>O tempo de tratamento varia de acordo com a intensidade dos sintomas, o tempo de evolução do quadro e a resposta individual de cada paciente. Após a avaliação, é definido um plano com objetivos claros, e a evolução é acompanhada de perto, com ajustes ao longo do processo.</p>
+            </div>
           </div>
         </article>
 
@@ -566,7 +665,9 @@
             </span>
           </button>
           <div class="faq-answer">
-            <p>Sim. A fisioterapia é uma das principais abordagens no tratamento das dores na coluna. Por meio de avaliação individualizada, terapia manual e exercícios específicos, atua na redução da dor, na melhora da mobilidade e na recuperação da funcionalidade, além de ajudar a prevenir novas crises.</p>
+            <div class="faq-answer-inner">
+              <p>Sim. A fisioterapia é uma das principais abordagens no tratamento das dores na coluna. Por meio de avaliação individualizada, terapia manual e exercícios específicos, atua na redução da dor, na melhora da mobilidade e na recuperação da funcionalidade, além de ajudar a prevenir novas crises.</p>
+            </div>
           </div>
         </article>
 
@@ -580,7 +681,9 @@
             </span>
           </button>
           <div class="faq-answer">
-            <p>Pode ajudar, sim. Quando bem orientado, o pilates fortalece a musculatura que sustenta a coluna e melhora a postura, a flexibilidade e o controle dos movimentos. A indicação e o momento certo de incluí-lo dependem da avaliação e da fase de recuperação de cada paciente.</p>
+            <div class="faq-answer-inner">
+              <p>Pode ajudar, sim. Quando bem orientado, o pilates fortalece a musculatura que sustenta a coluna e melhora a postura, a flexibilidade e o controle dos movimentos. A indicação e o momento certo de incluí-lo dependem da avaliação e da fase de recuperação de cada paciente.</p>
+            </div>
           </div>
         </article>
 
@@ -594,7 +697,9 @@
             </span>
           </button>
           <div class="faq-answer">
-            <p>O ideal é buscar avaliação quando a dor persiste por mais de alguns dias, volta com frequência, limita seus movimentos ou atrapalha a rotina, o sono e o trabalho. Dor que irradia para braços ou pernas, formigamento ou perda de força também são sinais de que uma avaliação é importante.</p>
+            <div class="faq-answer-inner">
+              <p>O ideal é buscar avaliação quando a dor persiste por mais de alguns dias, volta com frequência, limita seus movimentos ou atrapalha a rotina, o sono e o trabalho. Dor que irradia para braços ou pernas, formigamento ou perda de força também são sinais de que uma avaliação é importante.</p>
+            </div>
           </div>
         </article>
 
@@ -608,7 +713,9 @@
             </span>
           </button>
           <div class="faq-answer">
-            <p>Pode, mas nem sempre. A dor nas costas tem diversas causas, como tensões musculares e alterações articulares ou posturais. Quando vem acompanhada de dor que irradia para pernas ou braços, formigamento ou dormência, a hérnia de disco é uma das possibilidades. Por isso, uma avaliação detalhada é essencial para identificar a causa e definir o tratamento adequado.</p>
+            <div class="faq-answer-inner">
+              <p>Pode, mas nem sempre. A dor nas costas tem diversas causas, como tensões musculares e alterações articulares ou posturais. Quando vem acompanhada de dor que irradia para pernas ou braços, formigamento ou dormência, a hérnia de disco é uma das possibilidades. Por isso, uma avaliação detalhada é essencial para identificar a causa e definir o tratamento adequado.</p>
+            </div>
           </div>
         </article>
       </div>
@@ -684,6 +791,7 @@
     </div>
   </section>
   <!-- ======================== /CONTACT BLOCK ======================== -->
+  </main>
 
   <!-- ======================== FOOTER ======================== -->
   <footer class="site-footer">
@@ -707,6 +815,25 @@
     </svg>
   </a>
 
+  <!-- Modal de depoimento completo -->
+  <div class="review-modal" id="review-modal" hidden role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
+    <div class="review-modal__backdrop" data-review-close></div>
+    <article class="review-modal__panel" tabindex="-1">
+      <button class="review-modal__close" type="button" data-review-close aria-label="Fechar depoimento completo">&times;</button>
+      <div class="review-modal__header">
+        <div class="review-modal__avatar"></div>
+        <div>
+          <h3 class="review-modal__title" id="review-modal-title"></h3>
+          <p class="review-modal__meta">Avaliação no Google</p>
+        </div>
+      </div>
+      <div class="review-modal__stars" aria-label="5 estrelas">
+        <span aria-hidden="true">★★★★★</span>
+        <strong>5.0</strong>
+      </div>
+      <div class="review-modal__body"></div>
+    </article>
+  </div>
   <script>
     (function () {
       var track = document.querySelector('.reviews-track');
@@ -715,6 +842,11 @@
         return card.cloneNode(true);
       });
       var viewport = track.closest('.carousel-viewport');
+      var carousel = track.closest('.reviews-carousel');
+      var motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+      var isInView = !('IntersectionObserver' in window);
+      var isHovered = false;
+      var isTransitioning = false;
       var pagination = document.querySelector('.reviews-pagination');
       var prevBtn = document.querySelector('.carousel-btn--prev');
       var nextBtn = document.querySelector('.carousel-btn--next');
@@ -750,7 +882,9 @@
         track.innerHTML = '';
 
         originalCards.slice(total - cloneCount).forEach(function (card) {
-          track.appendChild(card.cloneNode(true));
+          var clone = card.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          track.appendChild(clone);
         });
 
         originalCards.forEach(function (card) {
@@ -758,7 +892,9 @@
         });
 
         originalCards.slice(0, cloneCount).forEach(function (card) {
-          track.appendChild(card.cloneNode(true));
+          var clone = card.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          track.appendChild(clone);
         });
 
         renderedCards = Array.from(track.querySelectorAll('.review-card'));
@@ -818,8 +954,8 @@
       }
 
       function startAutoPlay() {
-        if (total <= perView) return;
         stopAutoPlay();
+        if (total <= perView || motionPreference.matches || document.hidden || !isInView || isHovered || carousel.contains(document.activeElement) || pagination.contains(document.activeElement)) return;
         autoPlayId = window.setInterval(function () {
           stepBy(1);
         }, autoPlayDelay);
@@ -837,13 +973,66 @@
       }
 
       function applyTransform(animate) {
-        track.style.transition = animate === false ? 'none' : 'transform ' + transitionMs + 'ms cubic-bezier(0.4, 0, 0.2, 1)';
-        track.style.transform = 'translateX(-' + (virtualIndex * (cardWidth + gap)) + 'px)';
+        var nextTransform = 'translateX(-' + (virtualIndex * (cardWidth + gap)) + 'px)';
+        var shouldAnimate = animate !== false && !motionPreference.matches && track.style.transform !== nextTransform;
+        isTransitioning = shouldAnimate;
+        track.style.transition = shouldAnimate ? 'transform ' + transitionMs + 'ms cubic-bezier(0.22, 1, 0.36, 1)' : 'none';
+        track.style.transform = nextTransform;
       }
 
       function snapToCurrent() {
         virtualIndex = current + cloneCount;
         applyTransform(false);
+      }
+
+      var fontsHooked = false;
+
+      function normalizeReviewText(value) {
+        return (value || "").replace(/\s+/g, " ").trim();
+      }
+
+      function getFullReviewText(card) {
+        var source = card.querySelector(".rc-full-text");
+        var text = card.querySelector(".rc-text");
+        return normalizeReviewText(source ? source.textContent : text && text.textContent);
+      }
+
+      function cardOverflows(card) {
+        return card.scrollHeight > card.clientHeight + 1;
+      }
+
+      function fitReviewCard(card) {
+        var text = card.querySelector(".rc-text");
+        var button = card.querySelector(".rc-read-more");
+        var fullText = getFullReviewText(card);
+        if (!text || !fullText) return;
+
+        text.textContent = fullText;
+        text.classList.remove("is-clamped");
+        text.style.removeProperty("--review-lines");
+        if (button) button.hidden = true;
+
+        if (!button || !cardOverflows(card)) return;
+
+        button.hidden = false;
+        text.classList.add("is-clamped");
+
+        var computed = window.getComputedStyle(text);
+        var lineHeight = parseFloat(computed.lineHeight) || 24;
+        var naturalLines = Math.ceil(text.scrollHeight / lineHeight);
+        var lines = Math.min(Math.max(naturalLines, 4), 14);
+
+        while (lines > 4) {
+          text.style.setProperty("--review-lines", lines);
+          if (!cardOverflows(card)) break;
+          lines -= 1;
+        }
+
+        text.style.setProperty("--review-lines", lines);
+      }
+
+      function fitReviewCards(cards) {
+        cards.forEach(fitReviewCard);
       }
 
       function init() {
@@ -856,6 +1045,11 @@
           c.style.width = cardWidth + 'px';
           c.style.flex = '0 0 ' + cardWidth + 'px';
         });
+        fitReviewCards(renderedCards);
+        if (!fontsHooked && document.fonts && document.fonts.ready) {
+          fontsHooked = true;
+          document.fonts.ready.then(function () { fitReviewCards(renderedCards); });
+        }
         buildPageStops();
         renderPagination();
         snapToCurrent();
@@ -873,9 +1067,11 @@
       }
 
       function stepBy(delta) {
+        if (isTransitioning) return;
         current = normalizeIndex(current + delta);
         virtualIndex += delta;
         applyTransform(true);
+        if (motionPreference.matches) snapToCurrent();
         updateControls();
         updatePagination();
       }
@@ -888,14 +1084,37 @@
         stepBy(1);
         restartAutoPlay();
       });
-      track.addEventListener('transitionend', function () {
+      track.addEventListener('transitionend', function (event) {
+        if (event.target !== track || event.propertyName !== 'transform') return;
+        isTransitioning = false;
         if (virtualIndex < cloneCount || virtualIndex >= total + cloneCount) {
           snapToCurrent();
         }
       });
+      track.addEventListener('transitioncancel', function () { isTransitioning = false; });
       window.addEventListener('resize', init);
-      track.addEventListener('mouseenter', stopAutoPlay);
-      track.addEventListener('mouseleave', startAutoPlay);
+      carousel.addEventListener('mouseenter', function () { isHovered = true; stopAutoPlay(); });
+      carousel.addEventListener('mouseleave', function () { isHovered = false; startAutoPlay(); });
+      [carousel, pagination].forEach(function (element) {
+        element.addEventListener('focusin', stopAutoPlay);
+        element.addEventListener('focusout', function () { window.setTimeout(startAutoPlay, 0); });
+      });
+      carousel.addEventListener('keydown', function (event) {
+        if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+        event.preventDefault();
+        stepBy(event.key === 'ArrowRight' ? 1 : -1);
+      });
+      document.addEventListener('visibilitychange', startAutoPlay);
+      motionPreference.addEventListener('change', function () {
+        snapToCurrent();
+        startAutoPlay();
+      });
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (entries) {
+          isInView = entries[0].isIntersecting;
+          startAutoPlay();
+        }, { threshold: 0.15 }).observe(carousel);
+      }
 
       var touchStartX = 0;
       var touchStartY = 0;
@@ -916,6 +1135,10 @@
         }
         restartAutoPlay();
       }, { passive: true });
+      viewport.addEventListener('touchcancel', function () {
+        isDragging = false;
+        restartAutoPlay();
+      }, { passive: true });
 
       init();
     })();
@@ -928,10 +1151,18 @@
         var button = item.querySelector('.faq-question');
         item.classList.toggle('is-open', shouldOpen);
         button.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+        item.querySelector('.faq-answer').inert = !shouldOpen;
       }
 
-      items.forEach(function (item) {
+      items.forEach(function (item, index) {
         var button = item.querySelector('.faq-question');
+        var answer = item.querySelector('.faq-answer');
+        button.id = 'faq-question-' + (index + 1);
+        answer.id = 'faq-answer-' + (index + 1);
+        button.setAttribute('aria-controls', answer.id);
+        answer.setAttribute('aria-labelledby', button.id);
+        answer.setAttribute('role', 'region');
+        setOpenState(item, item.classList.contains('is-open'));
         button.addEventListener('click', function () {
           var willOpen = !item.classList.contains('is-open');
           items.forEach(function (currentItem) {
@@ -968,13 +1199,13 @@
         { selector: '.site-footer-inner', effect: 'up' }
       ];
       var elements = [];
-      var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 
       function registerReveal(node, effect, delay) {
         if (!node || node.classList.contains('reveal-item')) return;
         node.classList.add('reveal-item');
         node.setAttribute('data-reveal', effect || 'up');
-        node.style.setProperty('--reveal-delay', (delay || 0) + 'ms');
+        node.style.setProperty('--reveal-delay', Math.min(delay || 0, 180) + 'ms');
         elements.push(node);
       }
 
@@ -996,7 +1227,7 @@
 
       if (!elements.length) return;
 
-      if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+      if (motionPreference.matches || !('IntersectionObserver' in window)) {
         elements.forEach(function (element) {
           element.classList.add('is-visible');
         });
@@ -1012,29 +1243,117 @@
               observer.unobserve(entry.target);
             });
           }, {
-            threshold: 0.16,
-            rootMargin: '0px 0px -10% 0px'
+            threshold: 0.06,
+            rootMargin: '0px 0px 40px 0px'
           });
 
           elements.forEach(function (element) {
             observer.observe(element);
           });
 
-          function revealNearBottom() {
-            var scrollBottom = window.scrollY + window.innerHeight;
-            var docHeight = document.documentElement.scrollHeight;
-            if (docHeight - scrollBottom < 80) {
-              elements.forEach(function (el) {
-                if (!el.classList.contains('is-visible')) {
-                  el.classList.add('is-visible');
-                  observer.unobserve(el);
-                }
-              });
-            }
-          }
-          window.addEventListener('scroll', revealNearBottom, { passive: true });
-          revealNearBottom();
+          motionPreference.addEventListener('change', function (event) {
+            if (!event.matches) return;
+            elements.forEach(function (element) { element.classList.add('is-visible'); });
+            observer.disconnect();
+          });
         });
+      });
+    })();
+
+    (function () {
+      var videos = Array.from(document.querySelectorAll('.condition-media video'));
+      var motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      function updateVideo(video) {
+        video.controls = motionPreference.matches || !('IntersectionObserver' in window);
+        if (!video.controls && video.dataset.inView === 'true' && !document.hidden) {
+          video.play().catch(function () { video.controls = true; });
+        } else {
+          video.pause();
+        }
+      }
+
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            entry.target.dataset.inView = String(entry.isIntersecting);
+            updateVideo(entry.target);
+          });
+        }, { threshold: 0.15 });
+        videos.forEach(function (video) { observer.observe(video); });
+      }
+
+      function updateAll() { videos.forEach(updateVideo); }
+      motionPreference.addEventListener('change', updateAll);
+      document.addEventListener('visibilitychange', updateAll);
+      updateAll();
+    })();
+
+    /* Modal de depoimento completo */
+    (function () {
+      var modal = document.getElementById('review-modal');
+      if (!modal) return;
+
+      var panel = modal.querySelector('.review-modal__panel');
+      var avatar = modal.querySelector('.review-modal__avatar');
+      var title = modal.querySelector('.review-modal__title');
+      var body = modal.querySelector('.review-modal__body');
+      var lastFocus = null;
+
+      function focusable() {
+        return Array.from(modal.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'))
+          .filter(function (el) { return el.offsetParent !== null; });
+      }
+
+      function onKey(e) {
+        if (e.key === 'Escape') { close(); return; }
+        if (e.key !== 'Tab') return;
+        var items = focusable();
+        if (!items.length) return;
+        var first = items[0];
+        var last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+
+      function open(card, trigger) {
+        var source = card.querySelector('.rc-full-text');
+        var name = card.querySelector('.rc-name');
+        var cardAvatar = card.querySelector('.rc-avatar');
+        if (!source || !name || !cardAvatar) return;
+
+        lastFocus = trigger || document.activeElement;
+        avatar.textContent = cardAvatar.textContent;
+        title.textContent = name.textContent;
+        body.innerHTML = source.innerHTML;
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        panel.focus();
+        document.addEventListener('keydown', onKey);
+      }
+
+      function close() {
+        modal.hidden = true;
+        body.innerHTML = '';
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', onKey);
+        if (lastFocus) lastFocus.focus();
+      }
+
+      document.addEventListener('click', function (e) {
+        var openBtn = e.target.closest('[data-review-open]');
+        if (openBtn) {
+          e.preventDefault();
+          var card = openBtn.closest('.review-card');
+          if (card) open(card, openBtn);
+          return;
+        }
+        if (e.target.closest('[data-review-close]')) close();
       });
     })();
 
