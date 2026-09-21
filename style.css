@@ -13,15 +13,15 @@
   --shadow-soft: 0 4px 12px rgba(90, 62, 43, 0.025), 0 16px 40px rgba(90, 62, 43, 0.055);
   --gray-bg:    #F7F2EB;
   --font-display: 'Playfair Display', Georgia, serif;
-  --grad-start: #AB7C3B;
-  --grad-end:   #89602D;
+  --grad-start: #D8AE66;
+  --grad-end:   #9E7231;
   --gradient:   linear-gradient(110deg, var(--grad-start), var(--grad-end));
 }
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
 html {
-  scrollbar-color: #B88A48 rgba(107, 74, 44, 0.12);
+  scrollbar-color: #C29550 rgba(107, 74, 44, 0.12);
   scrollbar-width: thin;
 }
 
@@ -68,13 +68,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #D0A467 0%, #B88A48 100%);
+  background: linear-gradient(180deg, #DCB471 0%, #C29550 100%);
   border-radius: 999px;
   border: 2px solid rgba(255, 255, 255, 0.75);
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #DDB77E 0%, #C29550 100%);
+  background: linear-gradient(180deg, #E7C68D 0%, #CFA160 100%);
 }
 
 /* ===== TIPOGRAFIA DE TÍTULOS ===== */
@@ -230,9 +230,9 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  background: linear-gradient(115deg, #A17636, #89602D);
+  background: linear-gradient(115deg, #C99B4F, #9A6F2C);
   border: 1px solid rgba(107, 74, 44, 0.1);
-  box-shadow: 0 6px 18px rgba(137, 96, 45, 0.14), inset 0 1px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 18px rgba(154, 111, 44, 0.16), inset 0 1px rgba(255, 255, 255, 0.15);
   overflow: hidden;
   position: relative;
   color: var(--white);
@@ -1447,7 +1447,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #D6B06A 0%, #A67C3A 100%);
+  background: linear-gradient(135deg, #E2BE7C 0%, #B0863E 100%);
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -186,7 +186,7 @@
 
 /* Primary card (Agende) */
 .lk-card--primary {
-  background: linear-gradient(115deg, #A17636, #89602D);
+  background: linear-gradient(115deg, #C99B4F, #9A6F2C);
   border-color: transparent;
   box-shadow: 0 8px 24px rgba(107, 74, 44, 0.16), inset 0 1px rgba(255, 255, 255, 0.15);
   position: relative;
@@ -207,7 +207,7 @@
 
 @media (hover: hover) and (pointer: fine) {
   .lk-card--primary:hover {
-    background: linear-gradient(115deg, #A17636, #89602D);
+    background: linear-gradient(115deg, #C99B4F, #9A6F2C);
     box-shadow: 0 12px 32px rgba(107, 74, 44, 0.22);
     border-color: transparent;
   }
