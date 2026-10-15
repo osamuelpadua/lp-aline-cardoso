@@ -69,12 +69,14 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, #DCB471 0%, #C29550 100%);
+  background-origin: border-box;
   border-radius: 999px;
   border: 2px solid rgba(255, 255, 255, 0.75);
 }
 
 body::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #E7C68D 0%, #CFA160 100%);
+  background-origin: border-box;
 }
 
 /* ===== TIPOGRAFIA DE TÍTULOS ===== */
@@ -232,6 +234,8 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   gap: 16px;
   background: linear-gradient(115deg, #C99B4F, #9A6F2C);
+  /* degradê a partir da borda: no padrão (padding-box) ele se repete na faixa da borda e cria um fio escuro */
+  background-origin: border-box;
   border: 1px solid rgba(107, 74, 44, 0.1);
   box-shadow: 0 6px 18px rgba(154, 111, 44, 0.16), inset 0 1px rgba(255, 255, 255, 0.15);
   overflow: hidden;
@@ -879,6 +883,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 60px;
   height: 60px;
   background: linear-gradient(135deg, #7D8D6E, #48573F);
+  background-origin: border-box;
   border-radius: 50%;
   display: flex;
   align-items: center;
