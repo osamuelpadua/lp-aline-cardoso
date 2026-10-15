@@ -4,7 +4,10 @@
 }
 
 .links-page {
-  background: var(--paper);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
+    url("bg-marmore.jpg") center/cover no-repeat,
+    var(--paper);
   min-height: 100vh;
   min-height: 100svh;
   display: flex;
@@ -17,7 +20,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 48px 24px 56px;
+  padding: 48px 24px 0;
   overflow: hidden;
   background: radial-gradient(ellipse at 50% 0%, rgba(215, 196, 174, 0.28), transparent 65%);
 }
@@ -35,11 +38,19 @@
   z-index: 0;
 }
 
+/* painel vertical claro sobre o mármore, descendo até o rodapé */
 .lk-container {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 480px;
+  max-width: 544px;
+  align-self: stretch;
+  padding: 48px 32px 56px;
+  background: #FAF8F4;
+  border: 1px solid rgba(184, 138, 72, 0.14);
+  border-bottom: 0;
+  border-radius: 28px 28px 0 0;
+  box-shadow: 0 -4px 32px rgba(107, 74, 44, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,7 +326,8 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
-  .lk-main { padding: 32px 20px 40px; }
+  .lk-main { padding: 28px 14px 0; }
+  .lk-container { padding: 36px 18px 44px; border-radius: 24px 24px 0 0; }
   .lk-logo { height: 56px; }
   .lk-name { font-size: 16px; }
   .lk-card { padding: 16px 16px; gap: 14px; }
@@ -324,7 +336,8 @@
 }
 
 @media (max-width: 360px) {
-  .lk-main { padding-inline: 16px; }
+  .lk-main { padding-inline: 10px; }
+  .lk-container { padding-inline: 14px; }
   .lk-card { gap: 10px; padding-inline: 14px; }
   .lk-card-title { font-size: 14px; }
   .lk-card-desc { font-size: 12px; }
