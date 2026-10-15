@@ -46,9 +46,6 @@
   max-width: 544px;
   align-self: stretch;
   padding: 48px 32px 56px;
-  background: rgba(250, 248, 244, 0.3);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
   border: 1px solid rgba(184, 138, 72, 0.14);
   border-bottom: 0;
   border-radius: 28px 28px 0 0;
@@ -57,6 +54,20 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
+}
+
+/* preenchimento translúcido + desfoque numa camada própria, atrás do conteúdo:
+   com o backdrop-filter no próprio painel, as sombras dos cards ganhavam bordas escuras */
+.lk-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: rgba(250, 248, 244, 0.3);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
 }
 
 /* ===== HEADER ===== */
