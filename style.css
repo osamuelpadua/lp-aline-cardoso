@@ -153,6 +153,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   inset: 0;
   background-image: url('bg-hero.jpg');
+  background-image: image-set(url('bg-hero.webp') type('image/webp'), url('bg-hero.jpg') type('image/jpeg'));
   background-size: cover;
   background-position: center;
   z-index: 0;
