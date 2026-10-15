@@ -2,20 +2,12 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/links",
-      "destination": "/links.html"
-    },
-    {
-      "source": "/links/",
-      "destination": "/links.html"
-    },
-    {
       "source": "/bio",
-      "destination": "/links.html"
+      "destination": "/links"
     },
     {
       "source": "/bio/",
-      "destination": "/links.html"
+      "destination": "/links"
     }
   ],
   "headers": [
