@@ -196,6 +196,7 @@
 .lk-card:nth-child(2) { animation-delay: 0.19s; }
 .lk-card:nth-child(3) { animation-delay: 0.26s; }
 .lk-card:nth-child(4) { animation-delay: 0.33s; }
+.lk-card:nth-child(5) { animation-delay: 0.40s; }
 
 @media (hover: hover) and (pointer: fine) {
   .lk-card:hover {
@@ -211,6 +212,9 @@
 /* Primary card (Agende) */
 .lk-card--primary {
   background: linear-gradient(115deg, #C99B4F, #9A6F2C);
+  /* o degradê começa na borda transparente; com o padrão (padding-box) ele se repetia
+     na faixa de 1px da borda e mostrava a ponta escura como um fio na lateral */
+  background-origin: border-box;
   border-color: transparent;
   box-shadow: 0 8px 24px rgba(107, 74, 44, 0.16), inset 0 1px rgba(255, 255, 255, 0.15);
   position: relative;
@@ -232,6 +236,7 @@
 @media (hover: hover) and (pointer: fine) {
   .lk-card--primary:hover {
     background: linear-gradient(115deg, #C99B4F, #9A6F2C);
+    background-origin: border-box;
     box-shadow: 0 12px 32px rgba(107, 74, 44, 0.22);
     border-color: transparent;
   }
