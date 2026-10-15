@@ -7,6 +7,16 @@
     {
       "source": "/links/",
       "destination": "/links.html"
+    },
+    {
+      "source": "/marca",
+      "destination": "/marca/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/marca/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
     }
   ]
 }
